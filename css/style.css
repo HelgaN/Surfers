@@ -219,11 +219,26 @@ input[type="radio"].visually-hidden {
   box-shadow:1px 1px 30px 8px rgba(0,0,0,0.34);
 }
 
+.title-item-boards {
+  position: absolute;
+  top: 133px;
+  right: -297px;
+  font-weight: "Montserrat", "Arial", sans-serif;
+  font-size: 127px;
+  line-height: 127px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 25.7px;
+  transform: rotate(270deg);
+  color: #000000;
+  opacity: 0.03;
+}
+
 .catalog-item-photos {
   display: flex;
   background-image: url("../img/corner-background.png");
   background-repeat: no-repeat;
-  padding: 45px 22px 50px 27px;
+  padding: 45px 22px 27px 27px;
 }
 
 .catalog-item-photos img {
@@ -246,7 +261,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-description {
-  padding: 40px 50px 50px 0;
+  padding: 40px 50px 27px 0;
 }
 
 .item-name {
@@ -386,6 +401,8 @@ input[type="radio"].visually-hidden {
   padding:9px 0;
   font: inherit;
   border-top: 1px solid #d9d9d9;
+  text-overflow: ellipsis;     /*overflow*/
+  overflow: hidden;            /*overflow*/
 }
 
 #notebook-1:checked ~ .description-list .description-item:nth-child(1) {
@@ -420,4 +437,98 @@ input[type="radio"].visually-hidden {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 700;
+}
+
+.about-us {
+  position: relative;
+  z-index: 1;
+  top: 85px;
+  padding: 298px 0 274px 0;
+  background-image: url("../img/bg-about.jpg");
+  background-repeat: no-repeat;
+}
+
+.gradient-about {
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  width: 1920px;
+  height: 640px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+}
+
+.title-about-us {
+  position: absolute;
+  top: -300px;
+  left: 410px;
+  font-weight: "Montserrat", "Arial", sans-serif;
+  font-size: 196px;
+  line-height: 196px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 25.7px;
+  color: #000000;
+  opacity: 0.03;
+}
+
+.about-us-description {
+  position: relative;
+  z-index: 3;
+  width: 946px;
+  box-sizing: border-box;
+  padding: 98px 128px 42px 475px;
+  background-color: #ffffff;
+}
+
+.about-us-description h3 {
+  position: relative;
+  margin: 0;
+  margin-left: 45px;
+  margin-bottom: 59px;
+  text-align: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cross::before {
+  position: absolute;
+  left: 47%;
+  top: 33px;
+  content: "";
+  width: 1px;
+  height: 16px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.cross::after {
+  position: absolute;
+  left: 47%;
+  top: 33px;
+  content: "";
+  width: 1px;
+  height: 16px;
+  background-color: #000000;
+  transform: rotate(-45deg);
+}
+
+.about-us-description p {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: 'Playfair Display', "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 38px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.about-us-video {
+  position: absolute;
+  z-index: 4;
+  left: 1015px;
+  top: 560px;
 }
