@@ -861,3 +861,76 @@ input[type="radio"].visually-hidden {
     justify-content: center;
     margin-bottom: 180px;
   }
+
+  .social-block {
+    position: relative;
+    display: flex;
+    max-height: 521px;
+    padding: 60px 375px 0 375px;
+  }
+
+  .instagram-item {
+    width: 620px;
+    margin-right: 50px;
+  }
+
+  .instagram-title {
+    position: absolute;
+    top: -105px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: rgba(0, 0, 0, 0.03);
+  }
+
+  .instagram-photos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instagram-photos img:hover {
+    position: relative;
+    z-index: 2;
+    transform: scale(1.7) translateY(-64px);
+    box-shadow:1px 1px 65px 17px rgba(0,0,0,0.32);
+  }
+
+  .instagram-bottombar {
+    position: relative;
+  }
+
+  .instagram-bottombar a {
+    display: flex;
+    align-items: center;
+  }
+
+  .instagram-follow {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00b0ff;
+    padding-left: 68px;
+    padding-right: 18px;
+  }
+
+  .instagram-follow::before {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/inst-blue.png");
+  }
+
+  .facebook-item a {
+    display: block;
+    width: 440px;
+    height: 348px;
+    margin-top: 58px;
+    background-color: #566169;
+    background-image: url("../img/facebook-bg.jpg");
+  }
