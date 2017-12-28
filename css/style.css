@@ -449,7 +449,8 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   top: 85px;
   padding: 298px 0 280px 0;
-  margin-bottom: 118px;
+  margin-top: -5px;
+  margin-bottom: 113px;
   background-image: url("../img/bg-about.jpg");
   background-repeat: no-repeat;
 }
@@ -899,6 +900,7 @@ input[type="radio"].visually-hidden {
 
   .instagram-bottombar {
     position: relative;
+    background-color: #ffffff;
   }
 
   .instagram-bottombar a {
@@ -907,6 +909,7 @@ input[type="radio"].visually-hidden {
   }
 
   .instagram-follow {
+    margin: 22px 0 22px 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -933,4 +936,91 @@ input[type="radio"].visually-hidden {
     margin-top: 58px;
     background-color: #566169;
     background-image: url("../img/facebook-bg.jpg");
+  }
+
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 420px;
+    padding: 0 375px 0 375px;
+    margin-top: -57px;
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .footer-copyright {
+    display: flex;
+    width: 600px;
+    margin-top: 228px;
+    margin-right: 70px;
+    font-weight: 600;
+    color: #4d4d4d;
+  }
+
+  .copyright-paragraph-1 {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .copyright-paragraph-1::before {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 9px;;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #4d4d4d;
+  }
+
+  .footer-copyright a {
+    color: #4d4d4d;
+  }
+
+  .footer-copyright a:hover {
+    color: #817f7f;
+  }
+
+  .footer-links {
+    display: flex;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 38px 28px 38px 28px;
+    outline: 2px solid red;
+  }
+
+  .links-block-1,
+  .links-block-2 {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .links-block-1 {
+    margin-right: 70px;
+  }
+
+  .link-item a {
+    position: relative;
+    line-height: 34px;
+    color: #ffffff;
+  }
+
+  .link-item a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 19px;
+    height: 6px;
+    background-image: url("../img/waves-yellow.png");
+  }
+
+  .link-item a:hover::before {
+    background-image: url("../img/waves-yellow-dark.png");
+  }
+
+  .link-item a:hover {
+    color: #f2d800;
   }
