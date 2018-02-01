@@ -268,6 +268,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-description {
+  width: 400px;
   padding: 40px 50px 27px 0;
 }
 
@@ -931,6 +932,10 @@ input[type="radio"].visually-hidden {
     padding-right: 18px;
   }
 
+  .instagram-follow:hover {
+    color: #00d8ff;
+  }
+
   .instagram-follow::before {
     position: absolute;
     left: 20px;
@@ -941,6 +946,14 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/inst-blue.png");
   }
 
+  .instagram-mail {
+    color: #000000;
+  }
+
+  .instagram-mail:hover {
+    color: #00d8ff;
+  }
+
   .facebook-item a {
     display: block;
     width: 440px;
@@ -948,6 +961,10 @@ input[type="radio"].visually-hidden {
     margin-top: 58px;
     background-color: #566169;
     background-image: url("../img/facebook-bg.jpg");
+  }
+
+  .facebook-item a:hover {
+    box-shadow: 1px 1px 65px 17px rgba(0,0,0,0.32);
   }
 
   .main-footer {
